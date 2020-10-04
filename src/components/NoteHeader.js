@@ -17,7 +17,7 @@ const ViewButton = ({ match }) => (
 
 const NoteHeader = ({ title, match }) => (
   <header className={Styles.noteheader}>
-    <h2 className={Styles.noteheader__title}>{title + '2'}</h2>
+    <h2 className={Styles.noteheader__title}>{title}</h2>
     <div>
       <Route exact path="/:id" component={EditButton} />
       <Route path="/:id/edit" component={ViewButton} />
